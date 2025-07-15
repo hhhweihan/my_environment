@@ -16,7 +16,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 # 强大的主题（可选但推荐）
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
-# 配置.zshrc
+# 配置~/.zshrc
 ## 设置主题（二选一）
 ZSH_THEME="robbyrussell"  # Oh My Zsh默认主题
 ## 或使用powerlevel10k
