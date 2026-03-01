@@ -12,6 +12,9 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 # 语法高亮（正确命令绿色，错误命令红色）
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+## 如果上面的下载失败了就用这个命令
+git clone https://gitee.com/mirrors/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+
 
 # 强大的主题（可选但推荐）
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
@@ -23,14 +26,7 @@ ZSH_THEME="robbyrussell"  # Oh My Zsh默认主题
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 ## 添加插件（在plugins行修改）
-plugins=(
-  git
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-  sudo
-  extract
-  history
-)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting sudo extract history)
 
 # 应用配置
 source ~/.zshrc
